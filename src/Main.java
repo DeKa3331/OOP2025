@@ -26,6 +26,9 @@ public class Main {
 
         System.out.println(segment.length());
 
+        punkt2.translate(2,4);
+        System.out.println(punkt2.toSvg());
+        System.out.println(segment.length());
 
         Point p1 = new Point(0, 0);
         Point p2 = new Point(3, 4);
