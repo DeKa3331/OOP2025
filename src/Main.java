@@ -15,7 +15,7 @@ public class Main {
         System.out.println("YES");
         Point punkt =new Point(2.3,4.5);
 
-        System.out.println(punkt.toString());
+        System.out.println(punkt);
         System.out.println(punkt.toSvg());
         punkt.translate(2.3,4.5);
         System.out.println(punkt.toSvg());
