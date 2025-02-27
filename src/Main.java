@@ -2,9 +2,9 @@ public class Main {
 
     public static Segment findLongestSegment(Segment[] segments) {
         Segment longest = segments[0];
-        for (Segment testowany : segments) {
-            if (testowany.length() > longest.length()) {
-                longest = testowany;
+        for (Segment segment : segments) {
+            if (segment.length() > longest.length()) {
+                longest = segment;
             }
         }
         return longest;

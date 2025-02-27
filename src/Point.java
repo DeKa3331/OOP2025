@@ -14,10 +14,16 @@ class Point {
     public String toString() {
         return "Point(" + x + ", " + y + ")";
     }
+//    public String toSvg() {
+//        return "<svg height=\"100\" width=\"100\" xmlns=\"http://www.w3.org/2000/svg\">\n" +
+//                "  <circle r=\"45\" cx=\"" + x + "\" cy=\"" + y + "\" fill=\"red\" stroke=\"green\" stroke-width=\"3\" />\n" +
+//                "</svg>";
+//    }
+
     public String toSvg() {
-        return "<svg height=\"100\" width=\"100\" xmlns=\"http://www.w3.org/2000/svg\">\n" +
-                "  <circle r=\"45\" cx=\"" + x + "\" cy=\"" + y + "\" fill=\"red\" stroke=\"green\" stroke-width=\"3\" />\n" +
-                "</svg>";
+        return String.format("<svg height=\"100\" width=\"100\" xmlns=\"http://www.w3.org/2000/svg\">\n" +
+                "  <circle r=\"45\" cx=\"%.2f\" cy=\"%.2f\" fill=\"red\" stroke=\"green\" stroke-width=\"3\" />\n" +
+                "</svg>", this.x, this.x);
     }
 
     public void translate(double dx, double dy) {
